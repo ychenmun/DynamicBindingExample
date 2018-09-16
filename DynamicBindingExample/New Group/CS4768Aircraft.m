@@ -15,4 +15,9 @@
     NSLog(@"take off, cruise, land");
 }
 
+- (void)airDrop
+{
+    NSLog(@"watch out 💣");
+}
+
 @end

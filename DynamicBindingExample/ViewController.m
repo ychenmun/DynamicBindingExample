@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // ====== -(void)move and overriding ======
     CS4768Vehicle *vehicle = [[CS4768Vehicle alloc] init];
     [vehicle move];
     
@@ -35,6 +36,17 @@
     
     CS4768Vehicle *mysteriousObject = chopper;
     [mysteriousObject move];
+    
+    // ====== type introspection =======
+    [aircraft airDrop];
+    
+    CS4768Aircraft *thoughtWasPlane = (CS4768Aircraft *) vehicle;
+    if ([thoughtWasPlane isKindOfClass:[CS4768Aircraft class]])
+        [thoughtWasPlane airDrop];
+    else
+        NSLog(@"thoughtWasPlane is not an instance of CS4768Aircraft of subclass");
+    
+
 }
 
 

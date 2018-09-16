@@ -11,6 +11,6 @@
 
 @interface CS4768Aircraft : CS4768Vehicle
 
-//- (void) fly;
+- (void) airDrop;
 
 @end
