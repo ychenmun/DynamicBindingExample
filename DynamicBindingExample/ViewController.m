@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "CS4768Vehicle.h"
+#import "CS4768Aircraft.h"
+#import "CS4768Helicopter.h"
 
 @interface ViewController ()
 
@@ -17,6 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CS4768Vehicle *vehicle = [[CS4768Vehicle alloc] init];
+    [vehicle move];
+    
+    CS4768Aircraft *aircraft = [[CS4768Aircraft alloc] init];
+    [aircraft move];
+    
+    CS4768Helicopter *chopper = [[CS4768Helicopter alloc] init];
+    [chopper move];
+    
+    CS4768Helicopter *blackHawk = (CS4768Helicopter *)vehicle;
+    [blackHawk move];
+    
+    CS4768Vehicle *mysteriousObject = chopper;
+    [mysteriousObject move];
 }
 
 
