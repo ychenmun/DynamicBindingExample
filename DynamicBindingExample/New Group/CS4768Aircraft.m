@@ -12,7 +12,7 @@
 
 - (void)move
 {
-    NSLog(@"take off, cruise, land");
+    NSLog(@"taxi, take off, cruise, land");
 }
 
 - (void)airDrop

@@ -46,7 +46,11 @@
     else
         NSLog(@"thoughtWasPlane is not an instance of CS4768Aircraft of subclass");
     
-
+    SEL airDropMethod = @selector(airDrop);
+    if ([thoughtWasPlane respondsToSelector:airDropMethod])
+        [thoughtWasPlane airDrop];
+    else
+        NSLog(@"thoughtWasPlane does not respond to -(void)airDrop");
 }
 
 

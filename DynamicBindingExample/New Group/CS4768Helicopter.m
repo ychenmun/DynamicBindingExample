@@ -12,7 +12,7 @@
 
 - (void) move
 {
-    NSLog(@"x meters stationary above ground");
+    NSLog(@"vertical take off, cruise, vertical land");
 }
 
 @end
